@@ -1,0 +1,60 @@
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Beginning",
+  "complexity": 0
+}
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Introduction",
+  "complexity": 1
+}
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Boss1",
+  "complexity": 3
+}
+
+### Создать новый объект Game
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "gameName": "Forest",
+  "creationDate": "13.02.2022"
+}
+
+### Создать новый объект Game
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "gameName": "Chess",
+  "creationDate": "20.05.2023"
+}
+
+### Получение существующших игр
+GET http://localhost:8080/games
+
+### Получение игры по id
+GET http://localhost:8080/games/2
+
+### Получение существующших уровней
+GET http://localhost:8080/levels
+
+### Получение уровня по id
+GET http://localhost:8080/levels/7
+
+### Удаление уровня по id
+DELETE http://localhost:8080/levels/8
+
+### Удаление игры по id
+DELETE http://localhost:8080/games/2
