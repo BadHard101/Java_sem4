@@ -51,10 +51,10 @@ GET http://localhost:8080/games/2
 GET http://localhost:8080/levels
 
 ### Получение уровня по id
-GET http://localhost:8080/levels/7
+GET http://localhost:8080/levels/3
 
 ### Удаление уровня по id
-DELETE http://localhost:8080/levels/8
+DELETE http://localhost:8080/levels/2
 
 ### Удаление игры по id
 DELETE http://localhost:8080/games/2
