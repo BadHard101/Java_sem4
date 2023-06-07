@@ -1,0 +1,6 @@
+Game{id=1, gameName='Forest', creationDate='15.11.2018}
+Game{id=2, gameName='Forest', creationDate='15.11.2018}
+Game{id=4, gameName='Chess', creationDate='13.02.2022}
+Game{id=5, gameName='Chess', creationDate='13.02.2022}
+Game{id=6, gameName='Chess', creationDate='13.02.2022}
+Game{id=7, gameName='Forest', creationDate='15.11.2018}

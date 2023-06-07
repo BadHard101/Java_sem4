@@ -1,0 +1,7 @@
+Level{id=2, levelName='Boss2', complexity=2', gameId=3}
+Level{id=3, levelName='Boss2', complexity=2', gameId=3}
+Level{id=4, levelName='Introduction', complexity=1', gameId=null}
+Level{id=6, levelName='Boss1', complexity=3', gameId=null}
+Level{id=7, levelName='Boss2', complexity=2', gameId=4}
+Level{id=8, levelName='Boss3', complexity=1', gameId=2}
+Level{id=9, levelName='Introduction', complexity=1', gameId=null}

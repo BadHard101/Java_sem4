@@ -246,3 +246,9 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE
                 – Parameters: Game{id=null, gameName='Forest', creationDate='15.11.2018', levels=[]}
 83560 [task-1] INFO  c.e.jft_pr16.aspects.LogAspect
                 – Parameters: Game{id=null, gameName='Forest', creationDate='15.11.2018', levels=[]}
+475893 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+475894 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+475896 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
