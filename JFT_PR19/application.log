@@ -2186,3 +2186,9 @@ Caused by: org.postgresql.util.PSQLException: ОШИБКА: INSERT или UPDATE
                 – Signature: void com.example.jft_pr16.service.LevelService.saveLevel(Level)
 37054 [http-nio-8080-exec-3] INFO  c.e.jft_pr16.aspects.LogAspect
                 – Parameters: Level{id=null, levelName='Introduction', complexity=1, game=null, gameId=null}
+1969376 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+1969377 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+1969379 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

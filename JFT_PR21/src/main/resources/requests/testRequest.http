@@ -1,0 +1,78 @@
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Boss3",
+  "complexity": 1,
+  "gameId": 2
+}
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Introduction",
+  "complexity": 1
+}
+### Создать новый объект Level
+POST http://localhost:8080/levels
+Content-Type: application/json
+
+{
+  "levelName": "Boss1",
+  "complexity": 3
+}
+
+### Создать новый объект Game
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "gameName": "Forest",
+  "creationDate": "15.11.2018"
+}
+
+### Создать новый объект Game
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "gameName": "Chess",
+  "creationDate": "13.02.2022"
+}
+
+### Получение существующших игр
+GET http://localhost:8080/games
+
+### Получение игры по id
+GET http://localhost:8080/levels/7/game
+
+### Получение существующших уровней
+GET http://localhost:8080/levels
+
+### Получение уровня по id
+GET http://localhost:8080/levels/6
+
+### Удаление уровня по id
+DELETE http://localhost:8080/levels/5
+
+### Удаление игры по id
+DELETE http://localhost:8080/games/3
+
+
+
+### Фильтр объектов Game по имени
+GET http://localhost:8080/games/gameName/Forest
+
+### Фильтр объектов Game по дате создания
+GET http://localhost:8080/games/creationDate/13.02.2022
+
+### Фильтр объектов Level по имени
+GET http://localhost:8080/levels/levelName/Boss2
+
+### Фильтр объектов Level по сложности
+GET http://localhost:8080/levels/complexity/1
+
+### Фильтр объектов Level по id игры
+GET http://localhost:8080/levels/gameId/3
