@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS levels
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    levelName VARCHAR(128) NOT NULL,
+    complexity INTEGER NOT NULL,
+    gameId INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS games
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    gameName VARCHAR(128) NOT NULL,
+    creationDate VARCHAR(128) NOT NULL
+);
