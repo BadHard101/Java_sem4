@@ -23,50 +23,50 @@ public class LevelService {
     private final GameRepository gameRepository;
 
     public List<Level> getLevels() {
-        log.info("Get all levels");
+        // log.info("Get all levels");
         return levelRepository.findAll();
     }
 
     public Level getLevelById(Long id) {
-        log.info("Get level by id {}", id);
+        // log.info("Get level by id {}", id);
         return levelRepository.getReferenceById(id);
     }
 
     public void saveLevel(Level level) {
-        log.info("Save level {}", level);
+        // log.info("Save level {}", level);
         levelRepository.save(level);
     }
 
     public void deleteLevelById(Long id) {
-        log.info("Delete level by id {}", id);
+        // log.info("Delete level by id {}", id);
         levelRepository.deleteById(id);
     }
 
     public void updateLevelById(Level level, Long id) {
-        log.info("Update level {} by id {}", level, id);
+        // log.info("Update level {} by id {}", level, id);
         level.setId(id);
         levelRepository.save(level);
     }
 
     public GameDTO getGameByLevelId(Long levelId) {
-        log.info("Get game by level id {}", levelId);
+        // log.info("Get game by level id {}", levelId);
         LevelDTO levelDTO = levelRepository.getById(levelId).makeDTO();
         GameDTO gameDTO = gameRepository.getById(levelDTO.getGameId()).makeDTO();
         return gameDTO;
     }
 
     public List<Level> getLevelsByLevelName(String levelName) {
-        log.info("Get levels by levelName - {}", levelName);
+        // log.info("Get levels by levelName - {}", levelName);
         return levelRepository.findAllByLevelName(levelName);
     }
 
     public List<Level> getLevelsByComplexity(int complexity) {
-        log.info("Get levels by complexity - {}", complexity);
+        // log.info("Get levels by complexity - {}", complexity);
         return levelRepository.findAllByComplexity(complexity);
     }
 
     public List<Level> getLevelsByGameId(Long game_id) {
-        log.info("Get levels by game_id {}", game_id);
+        // log.info("Get levels by game_id {}", game_id);
         return levelRepository.findAllByGameId(game_id);
     }
 }

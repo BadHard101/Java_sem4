@@ -3,9 +3,9 @@ POST http://localhost:8080/levels
 Content-Type: application/json
 
 {
-  "levelName": "Boss2",
-  "complexity": 2,
-  "gameId": 4
+  "levelName": "Boss3",
+  "complexity": 1,
+  "gameId": 2
 }
 ### Создать новый объект Level
 POST http://localhost:8080/levels
